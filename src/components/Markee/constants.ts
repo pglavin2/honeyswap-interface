@@ -1,6 +1,6 @@
 import { BigNumber, ethers } from 'ethers'
 
-export const LEADERBOARD_ADDRESS = '0x1BD04A82814fF611acDB4AB7f94a767C976cC186'
+export const LEADERBOARD_ADDRESS = '0x9Eb8939fbc11A546617bc4C55e9AFa4D4d847d80'
 export const LEADERBOARD_ADDRESS_LOWER = LEADERBOARD_ADDRESS.toLowerCase()
 
 export const BASE_CHAIN_ID = 8453
