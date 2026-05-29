@@ -62,8 +62,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'action must be flag or unflag' })
     }
 
+    if (!/^0x[0-9a-fA-F]{40}$/.test(markeeId) || !/^0x[0-9a-fA-F]{40}$/.test(adminAddress)) {
+      return res.status(400).json({ error: 'Invalid address format' })
+    }
+
+    const ts = Number(timestamp)
+    if (!Number.isFinite(ts)) {
+      return res.status(400).json({ error: 'Invalid timestamp' })
+    }
     const now = Math.floor(Date.now() / 1000)
-    if (Math.abs(now - Number(timestamp)) > 300) {
+    if (Math.abs(now - ts) > 300) {
       return res.status(401).json({ error: 'Signature expired' })
     }
 

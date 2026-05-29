@@ -329,8 +329,8 @@ export default function MarkeeSign() {
               <FooterText>
                 {data.name
                   ? formatOwner(data.name)
-                  : data.topMarkeeOwner
-                    ? truncateAddress(data.topMarkeeOwner)
+                  : (data.topMarkeeOwner ?? data.topMarkeeAddress)
+                    ? truncateAddress(data.topMarkeeOwner ?? data.topMarkeeAddress!)
                     : ''}
               </FooterText>
               <FooterText style={{ display: 'flex', alignItems: 'center' }}>
