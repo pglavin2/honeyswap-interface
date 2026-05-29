@@ -342,6 +342,8 @@ export default function MarkeeSign() {
                 )}
                 {isAdmin && topMarkeeKey && (
                   <FlagIconButton
+                    type="button"
+                    aria-label={isFlagged ? 'Unflag this message' : 'Flag this message'}
                     flagged={isFlagged}
                     onClick={e => { e.stopPropagation(); handleFlag() }}
                     disabled={flagging}
