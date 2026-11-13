@@ -32,5 +32,5 @@ yarn start
                  ││                      ││
    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
-*Show the world you support this repo! [Change this message at markee.xyz](https://markee.xyz/ecosystem/platforms/github/0x43d025ea7f0bfcc508c5dc1708415fe2e41c464a) ^*
+*Show the world you support this repo! [Change this message at markee.xyz](https://markee.xyz/markee/0x43d025ea7f0bfcc508c5dc1708415fe2e41c464a) ^*
 <!-- MARKEE:END:0x43d025ea7f0bfcc508c5dc1708415fe2e41c464a -->
